@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "declaration": true,
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "inlineSources": true,
+    "sourceRoot": "/",
+    "experimentalDecorators": true,
+    "paths": {
+      "@modules/*": ["./src/modules/*"],
+      "@shared/*": ["./src/shared/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test",
+    "./knexfile.ts"
+  ]
+}
